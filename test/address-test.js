@@ -8,7 +8,7 @@
 'use strict';
 
 var assert = require('chai').assert
-    , address = require('../lib/address.js')
+    , address = require('../').address
   ;
 
 describe('address', function () {

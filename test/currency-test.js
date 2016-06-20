@@ -7,8 +7,9 @@
 
 'use strict';
 
-var assert = require('chai').assert,
-    currency = require('../lib/currency.js');
+var assert = require('chai').assert
+    , currency = require('../').currency
+  ;
 
 describe('currency', function () {
   itIs('says zero amounts', 0, '0 dollars');

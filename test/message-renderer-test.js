@@ -8,7 +8,7 @@
 'use strict';
 
 var assert = require('chai').assert
-		, messageRenderer = require('../lib/message-renderer.js')
+		, messageRenderer = require('../').messageRenderer
 		, Promise = require('bluebird')
 	;
 

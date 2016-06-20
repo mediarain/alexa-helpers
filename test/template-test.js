@@ -8,7 +8,7 @@
 'use strict';
 
 var assert = require('chai').assert
-		, template = require('../lib/template.js')
+		, template = require('../').template
 	;
 
 describe('template', function () {
