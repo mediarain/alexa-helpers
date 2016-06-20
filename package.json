@@ -4,7 +4,7 @@
   "description": "Simple library to manage alexa responses and some helpers to improve data transformation.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/*-test.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
     "bluebird": "^3.4.1"
   },
   "devDependencies": {
+    "mocha": "^2.5.3",
     "chai": "^3.5.0"
   }
 }

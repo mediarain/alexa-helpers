@@ -1,0 +1,87 @@
+//Notes: Case insensitive. Applied in order, so Always put commands with a period before those without.
+// e.g. Ave. should be before Ave, or "123rd Ave." would become "123rd Avenue ."
+
+S- > Suite 
+St. > Street
+St > Street
+Ave. > Avenue
+Ave > Avenue
+Av. > Avenue
+Av > Avenue
+Rd. > Road
+Rd > Road
+Hwy. > Highway 
+Hwy > Highway 
+Tpke. > Turnpike
+Tpke- > Turnpike
+Tpke > Turnpike
+Tpk. > Turnpike
+Tpk > Turnpike
+Dr. > Drive
+Dr > Drive
+N. > North
+E. > East
+W. > West
+S. > South
+N > North
+E > East
+W > West
+S > South
+No. > North
+So. > South
+NE > Northeast
+NW > Northwest
+SE > Southeast
+SW > Southwest
+N.E. > Northeast
+N.W. > Northwest
+S.E. > Southeast
+S.W. > Southwest
+Cntr > Center
+Ctr. > Center
+Ctr > Center
+Cntr. > Center
+Ln. > Lane
+Ln > Lane
+Wy. > Way
+Wy > Way
+Trl. > Trail
+Trl > Trail
+Tr. > Trail 
+Tr > Trail 
+Blvd. > Boulevard
+Blvd > Boulevard
+Pkwy. > Parkway
+Pkwy > Parkway
+Ste. > Suite
+Ste > Suite
+SR- > State Route
+I- > Interstate
+Pl. > Place
+Pl > Place
+Byp. > Bypass
+Byp > Bypass
+Fwy. > Freeway 
+Fwy > Freeway
+Trfy. > Trafficway
+Trfy > Trafficway 
+Bldg. > Building 
+Bldg > Building 
+USHwy. > US Highway 
+USHwy > US Highway 
+Air F > Air Force
+MP > Mile Post
+Ct. > Court
+Ct > Court
+Sq. > Square
+Sq > Square
+Rt. > Route
+Rt > Route
+Rte. > Route
+Rte > Route
+Expy > Expressway 
+Expy > Expressway 
+Cir. > Circle
+Cir > Circle
+FM > Farm to Market Road
+
