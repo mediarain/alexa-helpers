@@ -1,0 +1,28 @@
+{
+  "name": "alexa-helpers",
+  "version": "1.0.0",
+  "description": "Simple library to manage alexa responses and some helpers to improve data transformation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com"
+  },
+  "keywords": [
+    "alexa",
+    "responses",
+    "message",
+    "renderer"
+  ],
+  "author": "Rain Agency <npm@rain.agency> (http://rain.agency)",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.13.1",
+    "bluebird": "^3.4.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0"
+  }
+}
