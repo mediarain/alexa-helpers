@@ -2,38 +2,50 @@
 
 Simple library to manage alexa responses and some helpers to improve data transformation.
 
+Responses can include variables escaping them into curly brackets {variable}.
+
 # Example Usage
 
-To manage alexa responses.
+To manage alexa's responses.
 
 ```javascript
+var messageRenderer = require('alexa-helpers').messageRenderer
+  , Reply = require('alexa-helpers').reply;
+...
 var responses = {
   "Generic": {
     "Say": { say: "I want {a} {drink}" },
     "Tell": { tell: "I want {a} {drink}" },
-    "Ask": { ask: "I want {a} {drink}" },
-    "Reprompt": { ask: "I want {a} {drink}", reprompt: "{drink}" },
-    "NoNeeds": { say: "Do you like trees?" }
-  },
-  "Card": {
-    "Simple": {
+    "Ask": { 
+      ask: "Do you want a {drink}?",
+      reprompt: "Please answer if you want a {drink}.",
       card: {
         type: 'Simple',
         title: 'Blah',
         content: "I want {a} {drink}"
       }
     }
-    , "Standard": {
-      card: {
-        type: 'Standard',
-        title: '{a} Blah',
-        text: "I want {a} {drink}",
-        image: {
-          smallImageUrl: "https://carfu.com/resources/card-images/{small_image}.png",
-          largeImageUrl: "https://carfu.com/resources/card-images/race-car-large.png"
-        }
-      }
-    }
   }
+};
+
+var data = {
+  drink: 'water'
+};
+
+var variables = {
+  a: function a(data) {
+    return Promise.resolve('a');
+  },
+  drink: function drink(data) {
+    return Promise.resolve(data.drink);
+  }
+};
+
+var sut = messageRenderer(responses, variables);
+sut('Generic.Ask', data).then(function(msg) {
+  var reply = new Reply(msg);
+  // Send the message/text to alexa
+  reply.write(response);
+})
 
 ```
