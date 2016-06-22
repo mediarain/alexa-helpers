@@ -28,6 +28,12 @@ var messageRenderer = require('./lib/message-renderer');
 exports.messageRenderer = messageRenderer;
 
 /*
+ * Reply
+ */
+var reply = require('./lib/reply');
+exports.reply = reply;
+
+/*
  * Address modifier
  */
 
