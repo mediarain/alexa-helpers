@@ -1,5 +1,5 @@
 /**
- * Alexa Message Renderer
+ * Alexa Helpers
  *
  * Copyright (c) 2016 Rain Agency.
  * Licensed under the MIT license.
