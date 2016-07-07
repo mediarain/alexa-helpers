@@ -11,7 +11,7 @@ var exports = module.exports = {};
  * Alexa helpers version
  */
 
-exports.version = '1.0.0';
+exports.version = '1.0.1';
 
 /*
  * Simple template engine
@@ -46,3 +46,10 @@ exports.address = address;
 
 var currency = require('./lib/currency');
 exports.currency = currency;
+
+/*
+ * Language modifier
+ */
+
+var lang = require('./lib/lang');
+exports.lang = lang;
