@@ -1,6 +1,6 @@
 {
   "name": "alexa-helpers",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple library to manage alexa responses and some helpers to improve data transformation.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com"
+    "url": "http://github.com/mediarain/alexa-helpers"
   },
   "keywords": [
     "alexa",
