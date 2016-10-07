@@ -1,6 +1,6 @@
 {
   "name": "alexa-helpers",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Simple library to manage alexa responses and some helpers to improve data transformation.",
   "main": "index.js",
   "scripts": {
