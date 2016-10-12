@@ -117,6 +117,29 @@ describe('address', function () {
         assert.equal(actual, dest);
       });
     }
+
+
+    it('normalizes objects with the definition hint',function() {
+      var addr = {
+       streetAddressLine1: '1445 First Avenue',
+       streetAddressLine2: null,
+       streetAddressLine3: null,
+       city: 'New York',
+       countrySubdivisionCode: 'NY',
+       countryCode: 'US',
+       postalCode: '100213002'
+      };
+      var def = {
+        line1: 'streetAddressLine1',
+        line2: 'streetAddressLine2',
+        line3: 'streetAddressLine3',
+      }
+
+      var said = address.say(addr,def);
+      assert.equal(said,'1445 First Avenue, New York');
+    })
+
+
   });
 
   describe('isDeliverable',function(){
