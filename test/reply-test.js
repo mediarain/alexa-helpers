@@ -63,4 +63,17 @@ describe('reply', function () {
     });
   }
 
+  it('It can append of it\'s own type',function(){
+    var reply = new Reply({say: 'Hi'});
+    reply.append(new Reply({tell: 'Goodbye'}));
+    var actual = reply.render();
+    assert.deepEqual('<speak>Hi\nGoodbye</speak>',actual.say.speech);
+  })
+
+  it('It can take in an array of options',function(){
+    var reply = new Reply([{say: 'Hi'},{say: 'Goodbye'}]);
+    var actual = reply.render();
+    assert.deepEqual('<speak>Hi\nGoodbye</speak>',actual.say.speech);
+  })
+
 });
